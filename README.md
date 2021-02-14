@@ -29,5 +29,7 @@ A aplicação estará disponível em:
 http://localhost:3000
 ```
 
+#### Responsividade
+Foram tomados os cuidados básicos de responsividade e adaptação para dispositivos com resoluções menores.
 
 [![N|Solid](http://fior.in/img/fiorin.png)](http://fior.in)
