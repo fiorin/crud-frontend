@@ -11,7 +11,7 @@ const Footer = styled.div`
   font-size:1em;
   font-weight: bold;
   a {
-    color: ${colors.link};
+    color: ${colors.textdark};
     text-decoration: none;
   }
 `;

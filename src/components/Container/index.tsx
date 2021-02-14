@@ -49,6 +49,7 @@ Container.Columns = {
     padding: 30px 20px;
     border-top-left-radius: ${borders.radius };
     border-bottom-left-radius: ${borders.radius };
+    min-height:400px;
   `,
 }
 

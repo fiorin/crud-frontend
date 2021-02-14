@@ -1,25 +1,49 @@
 import React from "react";
-import { FaHome, FaMailchimp, FaPowerOff, FaShoppingBag, FaTasks, FaUserClock } from 'react-icons/fa';
+import { FaHome, FaPowerOff, FaShoppingBag, FaTasks } from 'react-icons/fa';
 import Link from "next/link";
-import { MenuIconItem, MenuIconsList } from "./style";
+import theme from "../../config/theme";
+import styled from "styled-components";
 
-const BarIcons = () => (
-  <MenuIconsList>
-    <MenuIconItem>
+const { colors } = theme;
+
+const MenuIconsList = () => (
+  <MenuIconsUl>
+    <MenuIconLi>
       <Link href="/">
         <FaHome/>
       </Link>
-    </MenuIconItem>
-    <MenuIconItem className="disabled">
+    </MenuIconLi>
+    <MenuIconLi className="disabled">
       <FaTasks/>
-    </MenuIconItem>
-    <MenuIconItem className="disabled">
+    </MenuIconLi>
+    <MenuIconLi className="disabled">
       <FaShoppingBag/>
-    </MenuIconItem>
-    <MenuIconItem className="disabled">
+    </MenuIconLi>
+    <MenuIconLi className="disabled">
       <FaPowerOff/>
-    </MenuIconItem>
-  </MenuIconsList>
+    </MenuIconLi>
+  </MenuIconsUl>
 )
 
-export default BarIcons 
+export default MenuIconsList 
+
+const MenuIconsUl = styled.ul`
+  list-style: none;
+  padding-left:0;
+`;
+
+const MenuIconLi = styled.li`
+  font-size: 1.3em;
+  color: ${ colors.textinverse };
+  text-align: center;
+    opacity: .9;
+  &.disabled {
+    opacity: .5;
+  }
+  &:not(.disabled){
+    cursor: pointer;
+  }
+  &:not(last-child) {
+    margin-bottom:.8em;
+  }
+`;

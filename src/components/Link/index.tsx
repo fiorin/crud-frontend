@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import NextLink from 'next/link';
-import { Props } from './interface';
+
+type Props = {
+  children?: ReactNode
+  href?: string
+}
 
 export default function Link({ children, href = '', ...props}: Props) {
   return (

@@ -6,6 +6,8 @@ import Container from '../components/Container';
 import GlobalStyle from '../styles/globals';
 import MenuIconsList from '../components/MenuIconsList';
 import Signature from '../components/Signature';
+import MenuOptionsActions from '../components/MenuOptionsActions';
+import MenuOptionsList from '../components/MenuOptionsList';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { title, favicon } = theme;
@@ -23,7 +25,8 @@ function MyApp({ Component, pageProps }: AppProps) {
               </Container.Columns.Icons>
               <Container.Internal>
                 <Container.Columns.Options>
-                  options
+                  <MenuOptionsActions/>
+                  <MenuOptionsList/>
                 </Container.Columns.Options>
                 <Container.Columns.Content>
                   <Component {...pageProps} />

@@ -1,6 +1,6 @@
 function Editar() {
   return (
-    <div>editar</div>
+    <div>Aqui seria a página de edição</div>
   )
 }
 export default Editar

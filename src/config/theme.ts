@@ -12,7 +12,7 @@ theme.colors = {
   },
   text: '#000',
   textinverse: '#fff',
-  link: '#14293d'
+  textdark: '#3a6d90'
 }
 
 theme.borders = {
