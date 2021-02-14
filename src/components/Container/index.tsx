@@ -23,6 +23,10 @@ Container.External = styled.div`
   &:after {
     clear:both;
   }
+  @media(max-width: 800px) {
+    max-width: 95%;
+    flex-direction: column;
+  }
 `;
 
 Container.Internal = styled.div`
@@ -32,16 +36,28 @@ Container.Internal = styled.div`
   background: ${colors.columns.options};
   border-top-left-radius: ${borders.radius };
   border-bottom-left-radius: ${borders.radius };
+  @media(max-width: 800px) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    flex-direction: column;
+  }
 `;
 
 Container.Columns = {
   Icons: styled.div`
     width:60px;
     padding: 30px 10px;
+    @media(max-width: 800px) {
+      width:100%;
+      padding: 0 10px;
+    }
   `,
   Options: styled.div`
     width:200px;
     padding: 30px 10px;
+    @media(max-width: 800px) {
+      padding: 20px;
+    }
   `,
   Content: styled.div`
     background: ${colors.columns.content};
@@ -50,6 +66,13 @@ Container.Columns = {
     border-top-left-radius: ${borders.radius };
     border-bottom-left-radius: ${borders.radius };
     min-height:400px;
+    @media(max-width: 800px) {
+      padding: 20px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      flex-direction: column;
+      min-height:auto;
+    }
   `,
 }
 

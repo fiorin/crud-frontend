@@ -1,4 +1,6 @@
+import React from "react"
 import DeveloperList from "../../components/DeveloperList"
+import Warning from "../../components/Warning"
 import Developer from "../../interface/developer"
 
 type Props = {
@@ -7,7 +9,12 @@ type Props = {
 
 function Listar({ developers }: Props) {
   return (
-    <DeveloperList developers={developers}/>
+    <div>
+      <DeveloperList developers={developers}/>
+      <Warning>
+        Funcionalidades de detalhar e excluir em funcionamento. Edição não implementada.
+      </Warning>
+    </div>
   )
 }
 

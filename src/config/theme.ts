@@ -1,6 +1,6 @@
 const theme: any = { 
   title: 'GOOD - Gerenciando Os Outros Desenvolvedores',
-  favicon: 'favicon.ico',
+  favicon: 'http://localhost:3000/favicon.ico',
 }
 
 theme.colors = {

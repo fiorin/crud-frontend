@@ -30,20 +30,28 @@ export default MenuIconsList
 const MenuIconsUl = styled.ul`
   list-style: none;
   padding-left:0;
+  @media(max-width: 800px) {
+    margin: 16px 0 12px 0;
+  }
 `;
 
 const MenuIconLi = styled.li`
   font-size: 1.3em;
   color: ${ colors.textinverse };
   text-align: center;
-    opacity: .9;
+  opacity: .8;
+  margin-bottom:10px;
   &.disabled {
-    opacity: .5;
+    opacity: .4;
+  }
+  &:hover:not(.disabled) {
+    opacity: 1;
   }
   &:not(.disabled){
     cursor: pointer;
   }
-  &:not(last-child) {
-    margin-bottom:.8em;
+  @media(max-width: 800px) {
+    display:inline-block;
+    margin: 0 10px;
   }
 `;

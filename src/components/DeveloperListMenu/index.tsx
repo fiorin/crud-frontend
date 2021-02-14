@@ -21,7 +21,7 @@ const DeveloperListMenu = ({ id }: Props ) => {
   const router = useRouter();
   const deleteDeveloper = async () => {
     const res = await fetch(`http://localhost:3001/developers/${id}`, { method: 'DELETE' })
-    router.reload()
+    router.replace(router.asPath)
   }
   return (
     <DeveloperListMenuContainer>
@@ -35,11 +35,11 @@ const DeveloperListMenu = ({ id }: Props ) => {
             <FaEdit/>
           </DeveloperListIcon>
         </Link>
-        <button onClick={deleteDeveloper}>
+        <DeveloperListButton onClick={deleteDeveloper}>
           <DeveloperListIcon>
             <FaTrash/>
           </DeveloperListIcon>
-        </button>
+        </DeveloperListButton>
     </DeveloperListMenuContainer>
   )
 }
@@ -49,4 +49,16 @@ export default DeveloperListMenu
 const DeveloperListMenuContainer = styled.div`
   align-self: flex-end;
   margin-left:auto;
+`;
+
+const DeveloperListButton = styled.button`
+  padding:0;
+  cursor:pointer;
+  opacity: .8;
+  border:0;
+  background: transparent;
+  width:36px;
+  &:hover{
+    opacity: 1;
+  }
 `;

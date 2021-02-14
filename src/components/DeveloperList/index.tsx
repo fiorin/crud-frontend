@@ -42,4 +42,5 @@ export default DeveloperList
 const DeveloperUl = styled.ul`
   padding-left:0;
   list-style:none;
+  margin: 0;
 `;

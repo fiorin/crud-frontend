@@ -25,6 +25,9 @@ const MenuOptionsActionsLiUl = styled.ul`
   list-style: none;
   padding-left:0;
   margin-bottom:20px;
+  @media(max-width: 800px) {
+    margin-top: 0;
+  }
 `;
 
 const MenuOptionsActionsLi = styled.li`

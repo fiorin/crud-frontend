@@ -52,6 +52,9 @@ export default MenuOptionsList
 const MenuOptionsActionsLiUl = styled.ul`
   list-style: none;
   padding-left:0;
+  @media(max-width: 800px) {
+    margin-bottom: 0;
+  }
 `;
 
 const MenuOptionsActionsLi = styled.li`
@@ -77,5 +80,10 @@ const MenuOptionsActionsLi = styled.li`
   svg {
     font-size: 14px;
     margin-right:10px;
+  }
+  @media(max-width: 800px) {
+    &.disabled {
+      display:none;
+    }
   }
 `;

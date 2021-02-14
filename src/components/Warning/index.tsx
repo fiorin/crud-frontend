@@ -6,6 +6,7 @@ const Warning = styled.div`
   padding:20px;
   border-radius:5px;
   font-size:12px;
+  margin-bottom:10px;
 `;
 
 export default Warning 
