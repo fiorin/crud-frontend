@@ -5,11 +5,11 @@ Para o desenvolvimento do frontend como SPA, foram tomadas as seguintes decisõe
 | ------ | ------ |
 | Reactjs + Next.js | Construção de componentes e estrutura de rotas. |
 | Yarn | Gerenciamento de dependências. |
-| Typescript | Em todo o projeto visando com a tipagem de entrada de valores no fluxo de componentes. |
+| Typescript | Em todo o projeto para tipagem de valores no fluxo de componentes. |
 | Styled Components | Estilização de página com css junto ao componente. |
 | React-icons | Biblioteca de ícones. |
 
-Requisitos para executção do projeto:
+Requisitos para execução do projeto:
   - Nodejs
   - Npm
   - Yarn
@@ -31,5 +31,3 @@ http://localhost:3000
 
 
 [![N|Solid](http://fior.in/img/fiorin.png)](http://fior.in)
-
-2021
