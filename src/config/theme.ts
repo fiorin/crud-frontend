@@ -10,7 +10,9 @@ theme.colors = {
     options: '#ffffff',
     content: '#f3f6f9'
   },
-  text: '#000'
+  text: '#000',
+  textinverse: '#fff',
+  link: '#14293d'
 }
 
 theme.borders = {

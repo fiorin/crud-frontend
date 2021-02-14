@@ -3,7 +3,6 @@ import theme from "../../config/theme";
 
 const { colors, borders } = theme;
 const Container : any = styled.div`
-  background: ${colors.background};
   padding:50px;
 `;
 
@@ -37,7 +36,7 @@ Container.Internal = styled.div`
 
 Container.Columns = {
   Icons: styled.div`
-    width:100px;
+    width:60px;
     padding: 30px 10px;
   `,
   Options: styled.div`
@@ -47,7 +46,7 @@ Container.Columns = {
   Content: styled.div`
     background: ${colors.columns.content};
     flex: 1;
-    padding: 30px 10px;
+    padding: 30px 20px;
     border-top-left-radius: ${borders.radius };
     border-bottom-left-radius: ${borders.radius };
   `,

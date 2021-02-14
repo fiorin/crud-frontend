@@ -2,8 +2,10 @@ import type { AppProps /*, AppContext */ } from 'next/app'
 import React from "react";
 import Head from 'next/head';
 import theme from '../config/theme'
-import Container from '../components/layout/container';
+import Container from '../components/Container';
 import GlobalStyle from '../styles/globals';
+import MenuIconsList from '../components/MenuIconsList';
+import Signature from '../components/Signature';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { title, favicon } = theme;
@@ -17,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Container>
           <Container.External>
               <Container.Columns.Icons>
-                icones
+                <MenuIconsList/>
               </Container.Columns.Icons>
               <Container.Internal>
                 <Container.Columns.Options>
@@ -29,6 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               </Container.Internal>
           </Container.External>
         </Container>
+        <Signature/>
     </div>
   )
 }
