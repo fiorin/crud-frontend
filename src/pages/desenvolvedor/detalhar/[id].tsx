@@ -19,7 +19,7 @@ function Detalhar({ developer }: Props) {
   )
 2}
 
-export const getServerSideProps = async (context) => {
+export const getServerSideProps = async (context: any) => {
   const { id } = context.params;
   const res = await fetch(`http://localhost:3001/developers/${id}`, { method: 'GET' })
   const developer = await res.json()

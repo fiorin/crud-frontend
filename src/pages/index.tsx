@@ -10,7 +10,7 @@ export default function Index() {
       <hr/>
       <h5>Backend</h5>
       <p><small>React.js | Nest.js | Yarn | TypeScript | Postgres | TypeORM</small></p>
-      <h6>Gazin 2021</h6>
+      <h6>2021</h6>
     </div>
   )
 }

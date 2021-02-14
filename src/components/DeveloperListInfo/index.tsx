@@ -1,6 +1,4 @@
 import React from "react";
-import { FaEye, FaHome, FaPowerOff, FaShoppingBag, FaTasks, FaTrash } from 'react-icons/fa';
-import Link from "next/link";
 import styled from "styled-components";
 
 type Props = {

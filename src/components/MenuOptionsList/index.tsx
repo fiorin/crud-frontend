@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHome, FaList, FaPowerOff, FaSearch, FaShoppingBag, FaTasks, FaTools, FaUserPlus, FaUsers } from 'react-icons/fa';
+import { FaList, FaSearch, FaTools, FaUsers } from 'react-icons/fa';
 import Link from "next/link";
 import theme from "../../config/theme";
 import styled from "styled-components";
