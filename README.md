@@ -31,4 +31,5 @@ http://localhost:3000
 
 
 [![N|Solid](http://fior.in/img/fiorin.png)](http://fior.in)
-by Fior.in 2021
+
+2021
